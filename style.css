@@ -10,3 +10,23 @@
 .navbar-nav > .nav-item > .nav-link {
     color: #000;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    border: none;
+    margin-left: -13px;
+    font-size: 18px;
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-close {
+    border: none;
+}
