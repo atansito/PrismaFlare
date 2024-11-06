@@ -3,9 +3,11 @@
 }
 
 @media (max-width: 600px) {
+
     #menualt {
         display: block;
     }
+
     .btn {
         display: none;
     }
@@ -37,4 +39,31 @@
 
 .btn-close {
     border: none;
+}
+
+.offcanvas {
+    height: 800px;
+}
+
+.concepto {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.concepto::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.concepto:hover::after {
+    transform: scaleX(1);
 }
